@@ -1,6 +1,6 @@
 ---
 title: Three sets of random numbers
-author: You
+author: Emily Wilhelm
 output: html_document
 ---
 
@@ -45,10 +45,10 @@ random_numbers3_breaks <- as.numeric(
   )
 )
 
-colors <- wesanderson::wes_palette("Zissou1", 4)
+colors <- RColorBrewer::brewer.pal(4, "Set1")
 
 point_color <- colors[random_numbers3_breaks]
-plot(
+plot(gi
   x = random_numbers1, y = random_numbers2,
   col = point_color,
   bty = "n", pch = 19
